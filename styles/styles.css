@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+}
+
+body {
+    font: 16px Tahoma serif;
+    background: #fff;
+    color: #333;
+}
+
+.container {
+    width: 290px;
+    margin: 20px auto;
+    padding: 16px 32px;
+    background-color: #eee;
+}
+
+fieldset, input, .container, .alert {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+span {
+    margin-bottom: 12px;
+    padding: 0 0 8px 120px;
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+#nick, #email, #password {
+    margin-bottom: 4px;
+    padding: 4px 6px;
+    width: 216px;
+}
+
+#nick {
+    margin-left: 26px;
+}
+
+#email {
+    margin-left: 30px;
+}
+
+#password {
+    margin-left: 3px;
+}
+
+#agree {
+    margin: 0 6px 0 0;
+}
+
+#submit {
+    padding: 5px 114px;
+    background-color: #428BCA;
+    color: #fff;
+}
+
+#submit:hover {
+    background-color: #3276B1;
+    color: #eee;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/*------------------------------DINAMIC STYLES-----------------------------------*/
+
+.alert {
+    display: none;
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #eaa;
+    color: red;
+}
+
+.warning {
+    border: 1px solid red;
+}
