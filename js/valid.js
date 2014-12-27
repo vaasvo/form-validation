@@ -1,9 +1,7 @@
 var myForm = document.querySelector('#form1');
-//var submitButton = document.querySelector('#submit');
 myForm.addEventListener('submit', submitHandler, false);
-//submitButton.addEventListener('click', submitHandler, false);
 
-function submitHandler (e) {
+function submitHandler(e) {
     var nick = document.querySelector('#nick');
     var email = document.querySelector('#email');
     var password = document.querySelector('#password');
@@ -13,19 +11,19 @@ function submitHandler (e) {
     var isValid = true;
 
     if (!nick.value) {
-        nick.style.border = '1px solid red';
+        nick.className = 'warning';
         isValid = false;
     }
     if (!email.value || !re.test(email.value)) {
-        email.style.border = '1px solid red';
+        email.className = 'warning';
         isValid = false;
     }
     if (!password.value) {
-        password.style.border = '1px solid red';
+        password.className = 'warning';
         isValid = false;
     }
     if (!agree.checked) {
-        agree.nextElementSibling.style.borderBottom = '1px solid red';
+        agree.nextElementSibling.className = 'warning';
         isValid = false;
     }
 
