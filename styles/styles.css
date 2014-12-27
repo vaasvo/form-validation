@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    outline: none;
     list-style: none;
 }
 
@@ -18,7 +17,7 @@ body {
     background-color: #eee;
 }
 
-fieldset, input, .container, .alert {
+input, .container, .alert {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -31,22 +30,14 @@ span {
     border-bottom: 1px solid #ccc;
 }
 
+ul li {
+    margin: 20px 0;
+}
+
 #nick, #email, #password {
-    margin-bottom: 4px;
+    float: right;
     padding: 4px 6px;
     width: 216px;
-}
-
-#nick {
-    margin-left: 26px;
-}
-
-#email {
-    margin-left: 30px;
-}
-
-#password {
-    margin-left: 3px;
 }
 
 #agree {
@@ -54,18 +45,16 @@ span {
 }
 
 #submit {
-    padding: 5px 114px;
+    width: 100%;
+    padding: 5px;
     background-color: #428BCA;
     color: #fff;
 }
 
 #submit:hover {
+    cursor: pointer;
     background-color: #3276B1;
     color: #eee;
-}
-
-ul li {
-    margin: 10px 0;
 }
 
 /*------------------------------DINAMIC STYLES-----------------------------------*/
@@ -79,6 +68,11 @@ ul li {
     color: red;
 }
 
-.warning {
+input.warning {
     border: 1px solid red;
+    background: #fee;
+}
+
+label.warning {
+    border-bottom: 1px solid red;
 }
